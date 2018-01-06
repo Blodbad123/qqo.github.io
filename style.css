@@ -369,6 +369,15 @@ footer.second p{
     text-align: center; 
 }
 
+.centernext {
+    text-align: center;
+    
+}
+
+#nextbutton{
+    text-align: center;
+    
+}
 /*---- MEDIA MOBILES AND STUFF!!!!! -------*/
 
 @media screen and (max-width: 768px){
@@ -421,6 +430,9 @@ footer.second p{
     .banner{
         padding-top:86px; 
     }
+
+    
+
     
     .one-fourth{
         float: left; 
