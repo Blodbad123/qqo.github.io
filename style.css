@@ -96,7 +96,9 @@ nav ul li a{
     text-decoration: none; 
 }
 nav ul li a:hover{
-    color: #a3a3a3; 
+    color: orange;
+    transition: 0.8s;
+    text-decoration: none;
 }
  /*-- The current link we're on*/
 .current{
@@ -419,7 +421,8 @@ footer.second p{
         width: 50%; 
     }
     nav:hover ul{
-        display: block; 
+        display: block;
+    
     }
     nav li{
         text-align: center; 
@@ -481,4 +484,25 @@ footer.second p{
         margin-left: 4.7%; 
 
     }
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 20px; /* Place the button at the bottom of the page */
+    left: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: transparent; /* Set a background color */
+    color: darkblue; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    opacity: .4;
+ 
+}
+
+#myBtn:hover {
+    background-color: lightsalmon; /* Add a dark-grey background on hover */
+    transition: 0.5s;
 }
