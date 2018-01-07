@@ -524,3 +524,15 @@ footer.second p{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.contentbox p{
+    margin: auto;
+    width: 50%;
+   text-decoration-color: darkslateblue;
+    padding: 10px;
+    
+}
+
+canvas {
+    position: absolute;
+}

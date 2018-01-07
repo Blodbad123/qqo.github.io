@@ -3,7 +3,7 @@ var canvas = document.querySelector('canvas');
 //var canvas = document.getElementById("canvas");
 console.log(canvas); 
 canvas.width = window.innerWidth;
-canvas.height = 400;
+canvas.height = 2000;
 
 // context variable
 var c = canvas.getContext("2d");
