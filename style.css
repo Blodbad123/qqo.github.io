@@ -7,10 +7,11 @@
 }
 
 body{
-    background: #F6EDD3; 
+  /* background: #F6EDD3; */
     color: #67727A; 
     font-family: 'Helvetica Neue', sans-serif; 
     margin: 0; 
+    height: 100%;
 }
 
 h2{
@@ -49,7 +50,7 @@ img{
 }
 
 header{
-    background-color: #F6EDD3; 
+   /* background-color: #F6EDD3; */
     width: 100%; 
     height: 110px; 
     text-align: center; 
@@ -105,13 +106,15 @@ nav ul li a:hover{
     color: #a3a3a3; 
 }
 
-/*-----End of navigation styling----*/
+/*-----End of navigation styling--#F6EDD3--*/
+
 
 .banner{
     width: 100%; 
-    background-color: #F6EDD3; 
+    background-color: transparent; 
+    
 }
-
+/*
 .banner-inner{
     /*max-width: 1600px; */
     margin: 0 auto; 
@@ -121,9 +124,10 @@ nav ul li a:hover{
     float: left; 
     text-align: center; 
 }
-
+/*
 #html{
-    background-color: #f1aa90; 
+    background-color: #f1aa90;
+    
 }
 #css{
     background-color: #beb9ad; 
@@ -505,4 +509,18 @@ footer.second p{
 #myBtn:hover {
     background-color: lightsalmon; /* Add a dark-grey background on hover */
     transition: 0.5s;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url("16402672_10154845234028190_1065234074662349592_o.jpg");
+
+    /* Set a specific height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
