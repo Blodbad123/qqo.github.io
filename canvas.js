@@ -3,7 +3,11 @@ var canvas = document.querySelector('canvas');
 //var canvas = document.getElementById("canvas");
 console.log(canvas); 
 canvas.width = window.innerWidth;
-canvas.height = 2000;
+canvas.height = window.innerHeight;
+
+
+console.log(window.innerHeight); 
+console.log(canvas.height);
 
 // context variable
 var c = canvas.getContext("2d");
@@ -36,7 +40,7 @@ window.addEventListener('mousemove',
 window.addEventListener('resize', 
     function(){
     canvas.width = window.innerWidth;
-    canvas.height = 300;
+    //canvas.height = window.innerHeight;
     init()
 }); 
 
@@ -72,7 +76,7 @@ function Circle(x, y, xVel, yVel, radius){
         this.y+=this.yVel; 
         
         
-        if(mouse.x - this.x < 100 && mouse.x -this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100){
+       /*if(mouse.x - this.x < 100 && mouse.x -this.x > -100 && mouse.y - this.y < 100 && mouse.y - this.y > -100){
             if(this.radius< maxRadius){
           this.radius += 1; 
             }
@@ -80,7 +84,7 @@ function Circle(x, y, xVel, yVel, radius){
             this.radius -=1; 
         }
         
-        
+        */
         this.draw(); 
     }
 }
@@ -89,7 +93,7 @@ function Circle(x, y, xVel, yVel, radius){
 function init(){
 
 circleArray =   [];  
-for (var i = 0; i < 800; i++){
+for (var i = 0; i < 200; i++){
     var radius = Math.random()*5 + 1; 
     var x = Math.random() * (innerWidth - radius*2)+ radius; 
     var y = Math.random() * (innerHeight - radius*2)+radius; 
@@ -128,3 +132,4 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+

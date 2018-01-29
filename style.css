@@ -66,6 +66,7 @@ header h3{
 #header-inner{
     max-width: 1200px;
     margin: 0 auto;
+    
    
 }
 
@@ -514,9 +515,10 @@ footer.second p{
 .parallax { 
     /* The image used */
     background-image: url("16402672_10154845234028190_1065234074662349592_o.jpg");
-
+    margin: 0 auto; 
     /* Set a specific height */
     height: 100%; 
+    width:100%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -526,13 +528,25 @@ footer.second p{
 }
 
 .contentbox p{
+    text-align: center; 
     margin: auto;
     width: 50%;
-   text-decoration-color: darkslateblue;
+   text-decoration-color: yellow;
     padding: 10px;
     
 }
 
+.headerbox{
+    padding : 7%;
+}
+
+.headerbox p{
+    text-align: center; 
+    font-size: 3em;
+}
+
+
+
 canvas {
-    position: absolute;
+    position: fixed;
 }
