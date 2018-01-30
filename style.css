@@ -520,6 +520,7 @@ footer.second p{
     height: 100%; 
     width:100%; 
 
+    
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
@@ -531,7 +532,7 @@ footer.second p{
     text-align: center; 
     margin: auto;
     width: 50%;
-   text-decoration-color: yellow;
+    text-decoration-color: yellow;
     padding: 10px;
     
 }
@@ -544,15 +545,49 @@ footer.second p{
     font-weight: 500; 
     text-align: center; 
     font-size: 3em;
+    padding : 0%; 
 }
 #underheader p{
-    font-weight: 200; 
+    font-weight: 100; 
     text-align: center; 
-    font-size: 0.7em; 
+    font-size: 1.7em; 
 }
 
+.left{
+    width : 50%; 
+    float:left; 
+    
+}
 
+.right{
+    width:50%;
+    float:right; 
+}
 
 canvas {
     position: fixed;
 }
+
+.buyrealistic{
+    width: 100%; 
+    margin: 0 auto; 
+}
+
+.buyrealistic p{
+    text-align: center; 
+    padding:0; 
+}
+
+
+.vinylimage{
+    text-align: center;   
+}
+
+.vinylimage img{
+    width: 300px; 
+    height: 300px; 
+    z-index: 10; 
+}
+
+
+
